@@ -8,6 +8,13 @@
     <title>猫眼电影-一网打尽好电影</title>
 
     <link href="{{ url_for("static", filename="css/style.css") }}" rel="stylesheet" type="text/css">
+
+    {% block headjs %}
+    {% endblock %}
+
+    {% block css %}
+    {% endblock %}
+
 </head>
 <body>
     {% block header %}

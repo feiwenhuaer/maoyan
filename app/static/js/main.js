@@ -60,3 +60,6 @@ function trans_banner(click_index) {
     }
     current_banner = next_banner;
 }
+
+
+/* 同步脚本 */

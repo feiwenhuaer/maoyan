@@ -1,0 +1,60 @@
+.manage-content {
+    width: 100%;
+    min-width: 1200px;
+    height: 400px;
+    position: relative;
+}
+
+.logo-content {
+    width: 133px;
+    height: 80px;
+
+    left: 0;
+    right: 0;
+    top: 20px;
+    bottom: 0;
+    margin: auto;
+    position: relative;
+
+    background: url("../img/logo/logo-red.png") center no-repeat;
+    overflow: hidden;
+}
+
+.manage-content form {
+    width: 641px;
+    height: 38px;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: relative;
+}
+
+.manage-content form .tag-input {
+    width: 524px;
+    height: 100%;
+    float: left;
+    position: relative;
+    margin: 0;
+    padding: 0 0 0 10px;
+    display: inline-block;
+    border: 1px solid #f0f0f0;
+    outline: none;
+}
+
+.manage-content form .submit-button {
+    width: 104px;
+    height: 40px;
+    float: left;
+    position: relative;
+    background-color: #38f;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+}
+
+
+

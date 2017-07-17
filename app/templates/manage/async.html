@@ -1,10 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "base/base.html" %}
 
-</body>
-</html>
+{% block headjs %}
+{#    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>#}
+{#    <script src="{{ url_for("static", filename="js/bootstrap.min.js") }}"></script>#}
+{% endblock %}
+
+{% block css %}
+    <link href="{{ url_for("static", filename="css/async.css") }}" rel="stylesheet" type="text/css"/>
+    <link href="" rel="stylesheet" type="text/css"/>
+{% endblock %}
+
+{% block content %}
+
+    <div class="manage-content">
+        <div class="logo-content"></div>
+        <form action="" method="post">
+            <input type="text" class="tag-input" name="tag" placeholder="数据同步标签"/>
+            <input type="submit" class="submit-button" value="点击同步"/>
+        </form>
+        <div class="result-content">
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block javascript %}
+    <script src={{ url_for("static", filename = "js/main.js") }}></script>
+{% endblock %}
