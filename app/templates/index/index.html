@@ -1,0 +1,20 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+    <div class="banner">
+        <a href="#" class="img-container"></a>
+        <a href="#" class="img-container"></a>
+        <div class="controller">
+            <a href="#" class="con active"></a>
+            <a href="#" class="con"></a>
+        </div>
+    </div>
+    <div class="content" style="height: 50px;">
+    </div>
+
+{% endblock %}
+
+
+{% block javascript %}
+    <script src={{ url_for("static", filename="js/main.js") }}></script>
+{% endblock %}

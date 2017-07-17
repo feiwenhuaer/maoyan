@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>猫眼电影-一网打尽好电影</title>
+
+    <link href="{{ url_for("static", filename="css/style.css") }}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    {% block header %}
+        <div class="header">
+            <a href="#" class="logo"></a>
+            <div class="city-container">
+                <div class="city-select">
+                    <div class="city-name">北京
+                        <span class="caret"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <ul class="nav-bar">
+                    <li><a href="#" class="active">首页</a> </li>
+                    <li><a href="#">电影</a></li>
+                    <li><a href="#">榜单</a></li>
+                    <li><a href="#">热点</a></li>
+                </ul>
+            </div>
+            <div class="user-info">
+                <div class="user-avatar">
+                    <img src="http://p0.meituan.net/movie/7dd82a16316ab32c8359debdb04396ef2897.png">
+                    <span class="caret"></span>
+                    <ul class="user-menu">
+                        <li><a href="#">登录</a></li>
+                    </ul>
+                </div>
+            </div>
+            <form class="query-form">
+                <input type="text" class="query-text" placeholder="找影视剧、影人、影院">
+                <input type="submit" class="query-sub" value>
+            </form>
+            <div class="download">
+                <a href="#">
+                    <span class="down-icon"></span>
+                    <div class="down-text">APP下载</div>
+                    <span class="caret"></span>
+                </a>
+            </div>
+        </div>
+        <div class="header-placeholder"></div>
+    {% endblock %}
+
+    {% block content %}
+        <div class="content" style="height: 500px">
+        </div>
+    {% endblock %}
+
+    {% block footer %}
+        <div class="footer">
+            <p>
+                友情链接：
+                <a href="#">美团网</a>
+                &nbsp;|&nbsp;
+                <a href="#">美团下载</a>
+            </p>
+            <p>
+                ©2016 猫眼电影 maoyan.com
+                <a href="#">
+                    京ICP证160733号
+                </a>
+                <a href="#">
+                    京ICP备16022489号-1
+                </a>
+                京公网安备 11010502030881号
+                <a href="#">
+                    网络文化经营许可证
+                </a>
+                <a href="#">
+                    电子公告服务规则
+                </a>
+            </p>
+            <p>
+                北京猫眼文化传媒有限公司
+            </p>
+        </div>
+    {% endblock %}
+
+    {% block javascript %}
+    {% endblock %}
+</body>
+</html>
