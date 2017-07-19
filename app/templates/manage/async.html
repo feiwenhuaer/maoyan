@@ -2,12 +2,11 @@
 
 {% block headjs %}
 {#    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>#}
-{#    <script src="{{ url_for("static", filename="js/bootstrap.min.js") }}"></script>#}
+
 {% endblock %}
 
 {% block css %}
     <link href="{{ url_for("static", filename="css/async.css") }}" rel="stylesheet" type="text/css"/>
-    <link href="" rel="stylesheet" type="text/css"/>
 {% endblock %}
 
 {% block content %}
@@ -18,8 +17,27 @@
             <input type="text" class="tag-input" name="tag" placeholder="数据同步标签"/>
             <input type="submit" class="submit-button" value="点击同步"/>
         </form>
-        <div class="result-content">
-        </div>
+        {% if context.data %}
+            <div class="result-content">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>同步时间</th>
+                            <th>同步标签</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for obj in context.data %}
+                        <tr>
+                            <td>{{ obj.time }}</td>
+                            <td>{{ obj.tag }}</td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% endif %}
+
     </div>
 
 {% endblock %}

@@ -1,17 +1,21 @@
 {% extends "base/base.html" %}
 
 {% block content %}
+    <p> {{ context.data }} </p>
     <div class="banner">
-        <a href="#" class="img-container"></a>
-        <a href="#" class="img-container"></a>
+        {% for obj in context.data.banner_list %}
+            <a href="{{ obj.href }}" class="img-container">
+                <img src="{{ obj.bg_url }}"/>
+            </a>
+        {% endfor %}
         <div class="controller">
-            <a href="#" class="con active"></a>
-            <a href="#" class="con"></a>
+            {% for obj in context.data.banner_list %}
+                <a href="#" class="con"></a>
+            {% endfor %}
         </div>
     </div>
     <div class="content" style="height: 50px;">
     </div>
-
 {% endblock %}
 
 

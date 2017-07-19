@@ -22,12 +22,13 @@
 
 .manage-content form {
     width: 641px;
-    height: 38px;
+    height: 40px;
     top: 10px;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
+    padding: 0;
     position: relative;
 }
 
@@ -44,7 +45,7 @@
 }
 
 .manage-content form .submit-button {
-    width: 104px;
+    width: 116px;
     height: 40px;
     float: left;
     position: relative;
@@ -56,5 +57,11 @@
     font-size: 16px;
 }
 
+.result-content {
+    width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+}
 
 

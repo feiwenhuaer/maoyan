@@ -1,6 +1,8 @@
 from flask import Flask
-
 from config.setting import config
+from flask_mongoengine import MongoEngine
+
+mongo = MongoEngine()
 
 
 def create_app(config_name):
@@ -13,6 +15,9 @@ def create_app(config_name):
     app.config.from_object(config[config_name])
     # do some things when init app
     config[config_name].init_app(app)
+
+    # init some third part by app
+    mongo.init_app(app)
 
     # register index blueprint
     from app.modules.index import index

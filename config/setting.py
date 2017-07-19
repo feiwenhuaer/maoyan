@@ -23,6 +23,12 @@ class DevelopConfig(Config):
     # Open Debug mode
     DEBUG = True
 
+    MONGODB_SETTINGS = {
+        "db": "maoyan",
+        "username": "wudong",
+        "password": "123456"
+    }
+
 
 class ProductConfig(Config):
 

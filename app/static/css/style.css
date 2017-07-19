@@ -110,7 +110,7 @@ body {
 }
 
 .user-info .user-avatar {
-    width: 56px;
+    width: 78px;
     height: 100%;
     padding: 0 10px;
     border: 1px solid transparent;
@@ -132,7 +132,7 @@ body {
 
 .user-info .user-avatar .caret {
     top: 39px;
-    right: 10px;
+    right: 12px;
     position: absolute;
 }
 
@@ -162,8 +162,8 @@ body {
 }
 
 .query-form input:nth-child(1) {
-    width: 200px;
-    height: 36px;
+    width: 260px;
+    height: 40px;
     padding-left: 20px;
     padding-right: 40px;
     background-color: #faf8fa;
@@ -176,7 +176,7 @@ body {
 }
 
 .query-form input:nth-child(2) {
-    left: 221px;
+    right: 0px;
     top: 0;
     width: 40px;
     height: 40px;
@@ -193,7 +193,7 @@ body {
 
 
 .download {
-    width: 132px;
+    width: 100px;
     height: 80px;
     float: right;
     position: relative;
@@ -295,7 +295,7 @@ body {
 /* 页脚 */
 .footer {
     width: 100%;
-    height: 60px;
+    min-width: 1200px;
     margin: 82px 0 0 0;
     padding: 56px 0;
     background-color: #262426;
