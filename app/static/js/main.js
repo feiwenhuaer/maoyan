@@ -6,7 +6,7 @@ var BANNER_TIME = 20000;
 
 var img_container = document.querySelectorAll(".img-container");
 var con_div_array = document.querySelectorAll(".controller .con");
-var current_banner = 0;
+var current_banner = img_container.length - 1;
 
 var timer;
 
@@ -15,6 +15,7 @@ start_app();
 
 
 function start_app() {
+    trans_banner(0);
     /* 启动定时器 */
     timer = setInterval(trans_banner, BANNER_TIME);
     control_click();
@@ -50,12 +51,12 @@ function trans_banner(click_index) {
     for (var i = 0; i < img_container.length; i++) {
         var a_div = img_container[i];
         var con_div = con_div_array[i];
-        if (i === current_banner) {
-            a_div.style.opacity = 0;
-            con_div.className = "con";
-        }else if (i === next_banner) {
+        if (i === next_banner) {
             a_div.style.opacity = 1;
             con_div.className = "con active";
+        }else{
+            a_div.style.opacity = 0;
+            con_div.className = "con";
         }
     }
     current_banner = next_banner;

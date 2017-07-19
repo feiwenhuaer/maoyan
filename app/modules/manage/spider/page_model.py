@@ -1,7 +1,7 @@
 from app import mongo
 from mongoengine.fields import *
 import time
-import json
+# import json
 
 
 class MaoyanIndexPage(mongo.Document):
@@ -16,7 +16,7 @@ class MaoyanIndexPage(mongo.Document):
         """
         result = MaoyanIndexPage.objects.order_by("-created_time").first()
         if result:
-            result = json.dumps(result.data)
+            result = result.data
         return result
 
     @staticmethod

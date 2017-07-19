@@ -176,7 +176,7 @@ body {
 }
 
 .query-form input:nth-child(2) {
-    right: 0px;
+    right: 0;
     top: 0;
     width: 40px;
     height: 40px;
@@ -235,40 +235,33 @@ body {
 
 /* Banner 广告 */
 .banner {
-    /*top: 81px;*/
     width: 100%;
     min-width: 1200px;
     height: 440px;
-    float: left;
+    /*float: left;*/
     position: relative;
+    overflow: hidden;
 }
 
 .img-container {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
     width: 100%;
     height: 100%;
     position: absolute;
     transition: all 1s;
 }
 
-.img-container:nth-child(1) {
-    opacity: 1;
-    background: url("../img/banner1.jpg") center no-repeat;
+.img-container img {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
 }
 
-.img-container:nth-child(2) {
-    opacity: 0;
-    background: url("../img/banner2.jpg") center no-repeat;
-}
 
 .banner .controller {
     bottom: 20px;
     width: 100px;
-    height: 25px;
+    height: 20px;
     left: 0;
     right: 0;
     margin: auto;
@@ -290,6 +283,32 @@ body {
 }
 
 /* Container 主体内容 */
+.container-main {
+    width: 1200px;
+    margin: 62px auto 0 auto;
+    border: 1px solid #2b669a;
+    /*position: relative;*/
+}
+
+.container-main .clear-float {
+    clear: both;
+}
+
+
+.container-main .aside {
+    width: 360px;
+    float: right;
+    position: relative;
+}
+
+.container-main .main {
+    padding: 0 18px;
+    right: 363px;
+    float: right;
+    position: relative;
+}
+
+
 
 
 /* 页脚 */

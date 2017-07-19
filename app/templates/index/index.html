@@ -1,7 +1,6 @@
 {% extends "base/base.html" %}
 
 {% block content %}
-    <p> {{ context.data }} </p>
     <div class="banner">
         {% for obj in context.data.banner_list %}
             <a href="{{ obj.href }}" class="img-container">
@@ -10,11 +9,75 @@
         {% endfor %}
         <div class="controller">
             {% for obj in context.data.banner_list %}
-                <a href="#" class="con"></a>
+                <a class="con"></a>
             {% endfor %}
         </div>
     </div>
-    <div class="content" style="height: 50px;">
+    <div class="container-main">
+        <div class="aside">
+            <div class="ranking">
+                <div class="div-head ranking-head">
+                    {{ context.data.aside.ranking.head.title }}
+                </div>
+                <div class="ranking-content">
+                    <ul class="ranking-list">
+                        {% for obj in context.data.aside.ranking.content %}
+                            <li>{{ obj.movie_name }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="total">
+                <h3>{{ context.data.aside.total.title  }}</h3>
+                <div class="total-intro">
+                    <p>
+                       <span class="num"> {{ context.data.aside.total.total }} </span>万
+                    </p>
+                    <p class="meta-info"> 北京时间 2017年7月19日 </p>
+                </div>
+            </div>
+            <div class="expect">
+                <div class="div-head expect-head">
+                    {{ context.data.aside.expect.head.title }}
+                </div>
+                <div class="expect-content">
+                    <ul class="expect-list">
+                        {% for obj in context.data.aside.expect.content %}
+                            <li>{{ obj.movie_name }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="top100">
+                <div class="div-head top100-head">
+                    {{ context.data.aside.top100.head.title }}
+                </div>
+                <div class="top100-content">
+                    <ul class="top100-list">
+                        {% for obj in context.data.aside.top100.content %}
+                            <li>{{ obj.movie_name }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            {% for panel in context.data.panel %}
+                <div class="panel">
+                    <div class="panel-head">
+                        {{ panel.head.title }}
+                    </div>
+                    <ul class="panel-content">
+                        {% for obj in panel.content %}
+                            <li class="movie-item">
+                                {{ obj["movie-title"] }}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="clear-float"></div>
     </div>
 {% endblock %}
 
