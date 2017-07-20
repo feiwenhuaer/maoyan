@@ -16,8 +16,11 @@ python maoyan.py pro
 1. Flask
 2. Flask-Cache
 3. Flask-Script
-4. Flask-SQLAlchemy
+4. Flask_Mongoengine
 5. Beautifulsoup4
+6. Lxml
+
+
 
 # Demo
 1. Index: 127.0.0.1:5000
