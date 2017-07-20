@@ -21,6 +21,8 @@ function start_app() {
     control_click();
 }
 
+
+/* banner 轮播控制部分 */
 function control_click() {
     for (var i = 0; i < con_div_array.length; i++) {
         (function (i) {
@@ -61,6 +63,3 @@ function trans_banner(click_index) {
     }
     current_banner = next_banner;
 }
-
-
-/* 同步脚本 */

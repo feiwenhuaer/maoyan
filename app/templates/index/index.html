@@ -22,7 +22,27 @@
                 <div class="ranking-content">
                     <ul class="ranking-list">
                         {% for obj in context.data.aside.ranking.content %}
-                            <li>{{ obj.movie_name }}</li>
+                            {% if loop.first %}
+                                <li class="rank-first">
+                                    <a class="rank-first-link" href="http://www.maoyan.com{{ obj.url }}">
+                                        <div class="rank-first-img-container">
+                                            <img class="rank-img" src="{{ obj.intro_img }}">
+                                        </div>
+                                        <div class="rank-first-content">
+                                            <span class="rank-movie-title">{{ obj.movie_name }}</span>
+                                            <span class="rank-num">{{ obj.rank_num }}万</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="rank-normal-li">
+                                    <a class="rank-item-link" href="http://www.maoyan.com{{ obj.url }}">
+                                        <i class="rank-index" >{{ loop.index }}</i>
+                                        <span class="rank-item-name">{{ obj.movie_name }}</span>
+                                        <span class="stonefont">{{ obj.rank_num }}万</span>
+                                    </a>
+                                </li>
+                            {% endif %}
                         {% endfor %}
                     </ul>
                 </div>
@@ -33,7 +53,7 @@
                     <p>
                        <span class="num"> {{ context.data.aside.total.total }} </span>万
                     </p>
-                    <p class="meta-info"> 北京时间 2017年7月19日 </p>
+                    <p class="meta-info"> 北京时间 19:46:34&nbsp;&nbsp;猫眼专业版实时票房数据 </p>
                 </div>
             </div>
             <div class="expect">
@@ -43,7 +63,40 @@
                 <div class="expect-content">
                     <ul class="expect-list">
                         {% for obj in context.data.aside.expect.content %}
-                            <li>{{ obj.movie_name }}</li>
+                            {% if loop.first %}
+                                <li class="ranking-item ranking-index-1">
+                                    <a href="http://www.maoyan.com{{ obj.url }}">
+                                        <div class="ranking-top-left">
+                                            <img src="{{ obj.rank_img }}"/>
+                                        </div>
+                                        <div class="ranking-top-right">
+                                            <span class="ranking-top-name">{{ obj.movie_name }}</span>
+                                            <p class="ranking-top-release">{{ obj.release_time }}</p>
+                                            <p class="ranking-top-want">{{ obj.expect_num }}人想看</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            {% elif (loop.index == 2) or (loop.index == 3) %}
+                                <li class="ranking-item ranking-index-{{ loop.index }}">
+                                    <a href="http://www.maoyan.com{{ obj.url }}">
+                                        <div class="ranking-top-top">
+                                            <img src="{{ obj.rank_img }}"/>
+                                        </div>
+                                        <div class="ranking-top-bottom">
+                                            <p class="ranking-top-name">{{ obj.movie_name }}</p>
+                                            <p class="ranking-top-want">{{ obj.expect_num }}人想看</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="ranking-item-normal ranking-item ranking-index-{{ loop.index }}">
+                                    <a href="http://www.maoyan.com{{ obj.url }}">
+                                        <i>{{ loop.index }}</i>
+                                        <span class="ranking-name-left">{{ obj.movie_name }}</span>
+                                        <span class="ranking-want-right">{{ obj.expect_num }}人想看</span>
+                                    </a>
+                                </li>
+                            {% endif %}
                         {% endfor %}
                     </ul>
                 </div>
@@ -55,7 +108,27 @@
                 <div class="top100-content">
                     <ul class="top100-list">
                         {% for obj in context.data.aside.top100.content %}
-                            <li>{{ obj.movie_name }}</li>
+                            {% if loop.first %}
+                                <li class="rank-first">
+                                    <a class="rank-first-link" href="http://www.maoyan.com{{ obj.url }}">
+                                        <div class="rank-first-img-container">
+                                            <img class="rank-img" src="{{ obj.intro_img }}">
+                                        </div>
+                                        <div class="rank-first-content">
+                                            <span class="rank-movie-title">{{ obj.movie_name }}</span>
+                                            <span class="rank-num">{{ obj.rank_num }}分</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            {% else %}
+                                <li class="rank-normal-li">
+                                    <a class="rank-item-link" href="http://www.maoyan.com{{ obj.url }}">
+                                        <i class="rank-index" >{{ loop.index }}</i>
+                                        <span class="rank-item-name">{{ obj.movie_name }}</span>
+                                        <span class="stonefont">{{ obj.rank_num }}分</span>
+                                    </a>
+                                </li>
+                            {% endif %}
                         {% endfor %}
                     </ul>
                 </div>
