@@ -303,7 +303,6 @@ body {
 
 .container-main .main {
     padding: 0 18px;
-    right: 363px;
     float: right;
     position: relative;
 }
@@ -668,6 +667,86 @@ a .ranking-top-left {
 
 .aside ul li:hover {
     background-color: #f7f7f7;
+}
+
+.main .sub-panel {
+    width: 750px;
+    margin-right: 52px;
+}
+
+.main .panel-head {
+    width: 100%;
+    height: 35px;
+    font-size: 26px;
+    line-height: 35px;
+}
+
+.main .panel-content {
+    margin: 0 0 0 -30px;
+    padding: 0;
+    width: 780px;
+    list-style: none;
+}
+
+.main .sub-panel:nth-child(1) .panel-head {
+    color: #ef4238;
+}
+
+
+.panel-content li {
+    padding: 0;
+    width: 160px;
+    list-style: none;
+
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+    border: 1px solid #efefef;
+}
+
+
+.movie-item-hot .intro-div {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.movie-item-hot .buy-btn {
+    width: 100%;
+    height: 39px;
+    color: #ef4238;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    line-height: 39px;
+    text-decoration: none;
+}
+
+.movie-item-hot .buy-btn:hover {
+    background-color: #ef4238;
+    color: #ffffff;
+}
+
+.sub-panel:nth-child(2) {
+    margin-top: 62px;
+}
+
+.sub-panel:nth-child(3) {
+    margin-top: 62px;
+}
+
+
+
+.sub-panel:nth-child(2) .panel-head {
+    color: #2d98f3;
+}
+
+.sub-panel:nth-child(3) .panel-head {
+    color: #ef4238;
+}
+
+.sub-panel:nth-child(3) li:nth-child(1) {
+    width: 350px;
 }
 
 

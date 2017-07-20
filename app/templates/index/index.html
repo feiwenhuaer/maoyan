@@ -136,17 +136,57 @@
         </div>
         <div class="main">
             {% for panel in context.data.panel %}
-                <div class="panel">
+                <div class="sub-panel">
                     <div class="panel-head">
                         {{ panel.head.title }}
                     </div>
                     <ul class="panel-content">
+                    {% if loop.first %}
                         {% for obj in panel.content %}
-                            <li class="movie-item">
-                                {{ obj["movie-title"] }}
+                            <li class="movie-item-hot">
+                                <a href="http://www.maoyan.com{{ obj.url }}">
+                                    <div class="intro-div">
+                                        <img src="{{ obj.bg_url }}"/>
+                                        <span>{{ obj["movie-title"] }}</span>
+                                    </div>
+                                </a>
+                                <a class="buy-btn" href="#">
+                                    购票
+                                </a>
                             </li>
                         {% endfor %}
+                    {% elif loop.index == 2 %}
+                        {% for obj in panel.content %}
+                            <li class="movie-item-hot">
+                                <a href="http://www.maoyan.com{{ obj.url }}">
+                                    <div class="intro-div">
+                                        <img src="{{ obj.bg_url }}"/>
+                                        <span>{{ obj["movie-title"] }}</span>
+                                    </div>
+                                </a>
+                                <div class="sub-content">
+                                    <p>3235人想看</p>
+                                    <div class="sub-control">
+                                        <span>预告片</span>
+                                        <span>预售</span>
+                                    </div>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    {% elif loop.index == 3 %}
+                        {% for obj in panel.content %}
+                            <li class="movie-item-hot">
+                                <a href="http://www.maoyan.com{{ obj.url }}">
+                                    <div class="intro-div">
+                                        <img src="{{ obj.bg_url }}"/>
+                                        <span>{{ obj["movie-title"] }}</span>
+                                    </div>
+                                </a>
+                            </li>
+                        {% endfor %}
+                    {% endif %}
                     </ul>
+                    <div class="clear-float"></div>
                 </div>
             {% endfor %}
         </div>
