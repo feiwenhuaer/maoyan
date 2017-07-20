@@ -112,11 +112,11 @@
                                 <li class="rank-first">
                                     <a class="rank-first-link" href="http://www.maoyan.com{{ obj.url }}">
                                         <div class="rank-first-img-container">
-                                            <img class="rank-img" src="{{ obj.intro_img }}">
+                                            <img class="rank-img" src="{{ obj.rank_img }}">
                                         </div>
                                         <div class="rank-first-content">
                                             <span class="rank-movie-title">{{ obj.movie_name }}</span>
-                                            <span class="rank-num">{{ obj.rank_num }}分</span>
+                                            <span class="rank-num">{{ obj.grade }}分</span>
                                         </div>
                                     </a>
                                 </li>
@@ -125,7 +125,7 @@
                                     <a class="rank-item-link" href="http://www.maoyan.com{{ obj.url }}">
                                         <i class="rank-index" >{{ loop.index }}</i>
                                         <span class="rank-item-name">{{ obj.movie_name }}</span>
-                                        <span class="stonefont">{{ obj.rank_num }}分</span>
+                                        <span class="stonefont">{{ obj.grade }}分</span>
                                     </a>
                                 </li>
                             {% endif %}

@@ -620,6 +620,10 @@ a .ranking-top-left {
     float: right;
 }
 
+.top100 {
+    margin-top: 100px;
+}
+
 .top100 .div-head.top100-head {
     color: #ffb400;
 }
@@ -634,6 +638,36 @@ a .ranking-top-left {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.top100-list li:nth-child(1) {
+    height: 80px;
+    margin-bottom: 11px;
+    border: 1px solid #efefef;
+}
+
+.top100-list li:nth-child(2) .rank-index{
+    color: #ffb400;
+}
+
+.top100-list li:nth-child(3) .rank-index{
+    color: #ffb400;
+}
+
+.rank-item-name {
+    margin-left: 2px;
+}
+
+.top100-list .stonefont {
+    color: #ffb400;
+}
+
+.top100-list .rank-num {
+    color: #ffb400;
+}
+
+.aside ul li:hover {
+    background-color: #f7f7f7;
 }
 
 

@@ -26,8 +26,8 @@
             <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/app/static/css/style.css">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="332">
-                    <caret line="635" column="20" lean-forward="false" selection-start-line="635" selection-start-column="20" selection-end-line="635" selection-end-column="20" />
+                  <state relative-caret-position="165">
+                    <caret line="669" column="30" lean-forward="false" selection-start-line="669" selection-start-column="30" selection-end-line="669" selection-end-column="30" />
                     <folding />
                   </state>
                 </provider>
@@ -45,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/app/static/css/async.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="225">
-              <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+              <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -88,8 +88,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/templates/index/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="117" column="30" lean-forward="true" selection-start-line="117" selection-start-column="30" selection-end-line="117" selection-end-column="30" />
+            <state relative-caret-position="315">
+              <caret line="141" column="26" lean-forward="true" selection-start-line="141" selection-start-column="26" selection-end-line="141" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -159,8 +159,8 @@
         <option value="$PROJECT_DIR$/app/modules/index/views.py" />
         <option value="$PROJECT_DIR$/app/modules/manage/spider/page_model.py" />
         <option value="$PROJECT_DIR$/app/static/js/main.js" />
-        <option value="$PROJECT_DIR$/app/static/css/style.css" />
         <option value="$PROJECT_DIR$/app/templates/index/index.html" />
+        <option value="$PROJECT_DIR$/app/static/css/style.css" />
       </list>
     </option>
   </component>
@@ -171,8 +171,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="371" />
-    <option name="y" value="23" />
+    <option name="x" value="415" />
     <option name="width" value="1045" />
     <option name="height" value="691" />
   </component>
@@ -641,7 +640,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="371" y="23" width="1045" height="691" extended-state="0" />
+    <frame x="415" y="0" width="1045" height="691" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21928935" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1034,23 +1033,23 @@
     <entry file="file://$PROJECT_DIR$/app/static/css/async.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="635" column="20" lean-forward="false" selection-start-line="635" selection-start-column="20" selection-end-line="635" selection-end-column="20" />
+          <caret line="31" column="23" lean-forward="false" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="117" column="30" lean-forward="true" selection-start-line="117" selection-start-column="30" selection-end-line="117" selection-end-column="30" />
+        <state relative-caret-position="315">
+          <caret line="141" column="26" lean-forward="true" selection-start-line="141" selection-start-column="26" selection-end-line="141" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="669" column="30" lean-forward="false" selection-start-line="669" selection-start-column="30" selection-end-line="669" selection-end-column="30" />
           <folding />
         </state>
       </provider>
