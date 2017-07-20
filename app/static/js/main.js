@@ -42,7 +42,7 @@ function trans_banner(click_index) {
 
     if (click_index === undefined) {
         next_banner = current_banner + 1 < img_container.length ? current_banner + 1 : 0;
-    }else{
+    } else {
         next_banner = click_index;
     }
 

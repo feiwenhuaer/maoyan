@@ -1,10 +1,5 @@
 {% extends "base/base.html" %}
 
-{% block headjs %}
-{#    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>#}
-
-{% endblock %}
-
 {% block css %}
     <link href="{{ url_for("static", filename="css/async.css") }}" rel="stylesheet" type="text/css"/>
 {% endblock %}
@@ -37,7 +32,6 @@
                 </table>
             </div>
         {% endif %}
-
     </div>
 
 {% endblock %}

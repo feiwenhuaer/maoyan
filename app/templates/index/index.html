@@ -138,7 +138,13 @@
             {% for panel in context.data.panel %}
                 <div class="sub-panel">
                     <div class="panel-head">
-                        {{ panel.head.title }}
+                        <span class="head-title-span">
+                            {{ panel.head.title }}
+                        </span>
+                        <span class="head-more">
+                            <a href="{{ panel.head.more.more_url }}">全部</a>
+                            <span class="arrow-span"></span>
+                        </span>
                     </div>
                     <ul class="panel-content">
                     {% if loop.first %}
@@ -146,8 +152,11 @@
                             <li class="movie-item-hot">
                                 <a href="http://www.maoyan.com{{ obj.url }}">
                                     <div class="intro-div">
+                                        <img src="{{ url_for("static", filename="img/sprit/movie_bg_placeholder.png") }}"/>
                                         <img src="{{ obj.bg_url }}"/>
-                                        <span>{{ obj["movie-title"] }}</span>
+                                        <div class="movie-overlay-bg">
+                                            <div>{{ obj["movie-title"] }}</div>
+                                        </div>
                                     </div>
                                 </a>
                                 <a class="buy-btn" href="#">
@@ -158,19 +167,25 @@
                     {% elif loop.index == 2 %}
                         {% for obj in panel.content %}
                             <li class="movie-item-hot">
-                                <a href="http://www.maoyan.com{{ obj.url }}">
-                                    <div class="intro-div">
-                                        <img src="{{ obj.bg_url }}"/>
-                                        <span>{{ obj["movie-title"] }}</span>
-                                    </div>
-                                </a>
-                                <div class="sub-content">
-                                    <p>3235人想看</p>
-                                    <div class="sub-control">
-                                        <span>预告片</span>
-                                        <span>预售</span>
+                                <div class="top-item-container">
+                                    <a href="http://www.maoyan.com{{ obj.url }}">
+                                        <div class="intro-div">
+                                            <img src="{{ url_for("static", filename="img/sprit/movie_bg_placeholder.png") }}"/>
+                                            <img src="{{ obj.bg_url }}"/>
+                                            <div class="movie-overlay-bg">
+                                                <div>{{ obj["movie-title"] }}</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="sub-content">
+                                        <p>3235人想看</p>
+                                        <div class="sub-control">
+                                            <a href="#">预告片</a>
+                                            <a href="#">预售</a>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="bottom-item-container"> 7月21日上映 </div>
                             </li>
                         {% endfor %}
                     {% elif loop.index == 3 %}
@@ -178,8 +193,11 @@
                             <li class="movie-item-hot">
                                 <a href="http://www.maoyan.com{{ obj.url }}">
                                     <div class="intro-div">
+                                        <img src="{{ url_for("static", filename="img/sprit/movie_bg_placeholder.png") }}"/>
                                         <img src="{{ obj.bg_url }}"/>
-                                        <span>{{ obj["movie-title"] }}</span>
+                                        <div class="movie-overlay-bg">
+                                            <div>{{ obj["movie-title"] }}</div>
+                                        </div>
                                     </div>
                                 </a>
                             </li>
