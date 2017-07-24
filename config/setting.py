@@ -31,6 +31,9 @@ class DevelopConfig(Config):
 
 
 class ProductConfig(Config):
+    MONGODB_SETTINGS = {
+        "db": "maoyan",
+    }
 
     @staticmethod
     def init_app(app):
